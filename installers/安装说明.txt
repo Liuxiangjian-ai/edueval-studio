@@ -1,0 +1,72 @@
+EduEval Studio 1.0.0 一键安装包
+================================
+
+这个压缩包里已经包含：
+  - dsh-plugin-edueval-1.0.0.tgz
+  - 安装 EduEval Studio.cmd   （Windows 一键安装）
+  - install.ps1               （Windows 安装脚本）
+  - install.sh                （macOS / Linux 安装脚本）
+
+一、Windows 安装
+----------------
+1. 解压整个压缩包到一个普通文件夹（不要只在压缩包预览窗口里双击）。
+2. 完全退出 DeepSeek Harness。
+3. 双击“安装 EduEval Studio.cmd”。
+4. 等待窗口显示 Installed / Done。
+5. 重新打开 DeepSeek Harness，从左侧栏进入 EduEval Studio。
+
+如果 Windows 提示“Windows 已保护你的电脑”，选择“更多信息”
+→“仍要运行”。脚本只做一件事：调用 DSH 自带的 CLI，把本目录下的
+tgz 注册到 desktop profile。
+
+二、macOS / Linux 安装
+----------------------
+在终端执行：
+
+  bash install.sh
+
+如果找不到 dsh，可指定 DSH CLI 路径：
+
+  DSH_BIN="/path/to/dsh" bash install.sh
+
+安装后重启 DeepSeek Harness。
+
+三、安装后第一次使用
+--------------------
+1. 打开左侧栏的 EduEval Studio。
+2. 在 Model Configuration 选择厂商和模型。
+3. 填入你自己的 API Key，点击“保存 Key”。
+4. 需要重启后继续使用时，勾选“记住 Key”。
+5. 点击“测试连接”。
+
+没有 API Key 时，可以先打开 Mock 模式验证完整工作流。
+插件本身不包含任何 API Key 或模型额度。
+
+四、关于 userdata 文件夹
+------------------------
+tgz 插件包内部没有 userdata 文件夹。复制文件时旁边出现的
+userdata 目录，是复制/下载工具或系统生成的旁路目录，不是插件
+内容，可以直接删除。
+
+为了避免再次出现这种误解，分发时只需要复制这一个 zip 文件。
+对方解压后运行安装脚本即可。
+
+五、手动安装 / 升级 / 卸载
+--------------------------
+手动安装：
+
+  dsh plugin --profile desktop add "本目录\dsh-plugin-edueval-1.0.0.tgz"
+
+升级：用新 tgz 再执行一次上面的 add 命令，然后重启。
+
+卸载：
+
+  dsh plugin --profile desktop remove dsh-plugin-edueval
+
+卸载不会删除 $DSH_HOME/edueval 下的评测数据。
+
+六、说明
+--------
+DeepSeek Harness 不会自动扫描任意 zip 并加载插件；首次使用必须
+执行一次安装脚本，把插件注册到 DSH profile。安装完成后，之后每次
+直接打开 DeepSeek Harness 就能使用。

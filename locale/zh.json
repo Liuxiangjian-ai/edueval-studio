@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "EduEval Studio",
+    "description": "DSH 原生多模型评测工作台：Benchmark 导入、每题 Rubric、LLM Judge、人工盲评、可视化看板与报告导出。"
+  },
+  "nav": "EduEval Studio"
+}

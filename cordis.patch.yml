@@ -1,0 +1,6 @@
+# EduEval Studio — native evaluation workbench.
+# The Host and Client halves live in the same package; the Client bundle is
+# selected by dsh.client in package.json.
+- insert:
+    - id: edueval
+      name: dsh-plugin-edueval

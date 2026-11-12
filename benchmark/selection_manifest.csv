@@ -1,0 +1,11 @@
+﻿id,task_type,stage,grade,subject,topic,difficulty,selection_rationale
+EDU-01,lesson_plan,初中,八年级,物理,浮力探究,挑战,科学探究、实验资源限制与错误概念纠正
+EDU-02,lesson_plan,小学,五年级,数学,异分母分数加减法,基础,基础数学计算、课堂时间分配与无电子设备条件
+EDU-03,lesson_plan,小学,六年级,英语,Asking for directions,进阶,英语语言准确性、交际活动和角色扮演
+EDU-04,lesson_plan,高中,高一,语文,议论文证据与反驳,挑战,议论文论证、证据质量与生成式AI伦理辩论
+EDU-05,lesson_plan,初中,七年级,信息科技,生成式AI内容核验,进阶,AI内容事实核验、幻觉识别与隐私保护
+EDU-06,slide_outline,小学,三年级,数学,周长与面积,基础,基础课件结构、页数和算例约束
+EDU-07,slide_outline,初中,九年级,化学,酸碱指示剂与pH,进阶,化学知识精度、实验安全与酸碱误区
+EDU-08,slide_outline,初中,九年级,历史,工业革命与劳动者生活,挑战,历史证据辨析、虚构材料标识和多视角论证
+EDU-09,slide_outline,高中,高一,生物,DNA半保留复制,进阶,生物机制解释、类比局限与科学准确性
+EDU-10,slide_outline,高中,高二,英语,Argumentative writing: claim-evidence-reasoning,挑战,英语写作、论证结构及跨语言课件生成

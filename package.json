@@ -1,0 +1,75 @@
+{
+  "name": "dsh-plugin-edueval",
+  "version": "1.0.0",
+  "description": "EduEval Studio — native multi-model evaluation workbench for DeepSeek Harness, with benchmark import, per-case rubrics, LLM-as-a-Judge, blind human review, dashboards, and export.",
+  "type": "module",
+  "license": "MIT",
+  "author": "EduEval Studio contributors",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "evaluation",
+    "llm-as-a-judge",
+    "benchmark"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/icon.svg",
+    "./data/*": "./data/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "src/**/*.js",
+    "data/*",
+    "locale/*.json",
+    "assets/icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "docs/screenshots/*.png",
+    "docs/*.md",
+    "tests/**/*.js",
+    "scripts/*.mjs",
+    "README.en.md",
+    "benchmark/*.md",
+    "benchmark/*.csv",
+    "installers/*",
+    "scripts/*.py",
+    "docs/source-inventory.json"
+  ],
+  "icon": "assets/icon.svg",
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0",
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "test": "node tests/all.test.js",
+    "test:runner": "node --test tests/*.test.js",
+    "check": "node scripts/check.mjs",
+    "verify": "node scripts/check.mjs && node tests/all.test.js",
+    "pack": "npm pack",
+    "validate:benchmark": "python scripts/validate_benchmark.py"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

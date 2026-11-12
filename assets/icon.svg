@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EduEval Studio">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b2a4a"/>
+      <stop offset="1" stop-color="#2f6fed"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="64" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7ee7c7"/>
+      <stop offset="1" stop-color="#d8fff4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <path d="M10 24.5 32 14l22 10.5L32 35 10 24.5Z" fill="#fff" opacity=".96"/>
+  <path d="M18 30.5V41c6.2 5 21.8 5 28 0V30.5L32 38 18 30.5Z" fill="#bcd2ff"/>
+  <path d="M53 26v13.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="53" cy="42" r="2.8" fill="#7ee7c7"/>
+  <rect x="16" y="44" width="6" height="8" rx="2" fill="url(#bar)"/>
+  <rect x="26" y="39" width="6" height="13" rx="2" fill="url(#bar)"/>
+  <rect x="36" y="33" width="6" height="19" rx="2" fill="url(#bar)"/>
+  <rect x="46" y="46" width="4" height="6" rx="1.6" fill="#d8fff4" opacity=".75"/>
+</svg>

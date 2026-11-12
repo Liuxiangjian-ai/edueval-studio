@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "EduEval Studio",
+    "description": "Native multi-model evaluation workbench with benchmark import, per-case rubrics, LLM-as-a-Judge, human blind review, dashboards, and export."
+  },
+  "nav": "EduEval Studio"
+}
